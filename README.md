@@ -3,12 +3,16 @@ Operating_System_NachOS_MP1
 
 Implement some ConsoleIO and FileIO function
 
-ConsoleIO : void PrintInt(int number)
+ConsoleIO :
 
-FileIO: OpenFileId Open(char *name)
+void PrintInt(int number)
 
-        int Write(char *buffer, int size, OpenFileId id)
+FileIO:
+
+OpenFileId Open(char *name)
+
+int Write(char *buffer, int size, OpenFileId id)
         
-        int Read(char *buffer, int size, OpenFileId id)
+int Read(char *buffer, int size, OpenFileId id)
         
-        int Close(OpenFileId id)
+int Close(OpenFileId id)
